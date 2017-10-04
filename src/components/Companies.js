@@ -6,7 +6,6 @@ import { addTracked } from '../actions';
 class Companies extends Component {
   render() {
     const company = this.props.company;
-    console.log(this.props.company);
 
     return(
       <div>
@@ -18,7 +17,7 @@ class Companies extends Component {
 
 function mapState2Props(state) {
   return {
-    companies: state.companies,
+    trackedCompanies: state.trackedCompanies,
   };
 }
 

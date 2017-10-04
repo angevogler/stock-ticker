@@ -3,7 +3,9 @@ import { createStore } from 'redux';
 function reducer(state, action) {
 
   if (action.type === 'ADD_TRACKED') {
-
+    return {
+      trackedCompanies: state.trackedCompanies.concat(action.payload),
+    };
   }
 
 
@@ -11,5 +13,5 @@ function reducer(state, action) {
 }
 
 export default createStore(reducer, {
-  companies: [],
+  trackedCompanies: [],
 });

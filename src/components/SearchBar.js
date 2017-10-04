@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import Companies from './Companies'
+import Companies from './Companies';
+import TrackedCompanies from './TrackedCompanies';
 
 class SearchBar extends Component {
   constructor(props) {
@@ -45,6 +46,12 @@ class SearchBar extends Component {
         <ul>
           {searchResults}
         </ul>
+        <div>
+          <h2>Tracked Companies</h2>
+          <ul>
+            <TrackedCompanies />
+          </ul>
+        </div>
       </div>
     )
   }
